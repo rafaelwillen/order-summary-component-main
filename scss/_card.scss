@@ -1,0 +1,15 @@
+.card {
+  width: 90%;
+  margin: auto;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: $borderRadius;
+  margin-bottom: 4.4375rem;
+
+  &__img {
+    img {
+      border-top-left-radius: $borderRadius;
+      border-top-right-radius: $borderRadius;
+    }
+  }
+}

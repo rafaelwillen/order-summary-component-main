@@ -1,17 +1,25 @@
 html {
-    font-size: 100%;
+  font-size: 100%;
 }
 
-*, ::after,::before {
-    box-sizing: border-box;
+*,
+::after,
+::before {
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: $fontSize;
-    font-weight: $fontWMedium;
-    line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: $fontSize;
+  font-weight: $fontWMedium;
+  line-height: 1.6;
+  padding-top: 4.4375rem;
+  background: $paleBlue url("/images/pattern-background-mobile.svg") no-repeat;
+  background-size: cover;
 }
 
+img {
+  width: 100%;
+}

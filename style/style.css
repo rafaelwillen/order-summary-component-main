@@ -2,7 +2,9 @@ html {
   font-size: 100%;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -10,9 +12,22 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.6;
+  padding-top: 4.4375rem;
+  background: #f7f5ff url("/images/pattern-background-mobile.svg") no-repeat;
+  background-size: cover;
+}
+
+img {
+  width: 100%;
+}
+
+.card {
+  width: 90%;
+  margin: auto;
+  max-width: 500px;
 }
 /*# sourceMappingURL=style.css.map */

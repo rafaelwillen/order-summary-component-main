@@ -12,4 +12,22 @@
       border-top-right-radius: $borderRadius;
     }
   }
+
+  &__details {
+    text-align: center;
+    margin-top: 2.18rem;
+    // margin-bottom: 1.625rem;
+    width: 85%;
+    margin: auto;
+
+    h1 {
+      color: $darkBlue;
+      font-size: 1.6rem;
+    }
+
+    p {
+      color: $desBlue;
+      font-size: 1rem;
+    }
+  }
 }

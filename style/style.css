@@ -25,6 +25,12 @@ img {
   width: 100%;
 }
 
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
 .card {
   width: 90%;
   margin: auto;
@@ -37,5 +43,22 @@ img {
 .card__img img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+
+.card__details {
+  text-align: center;
+  margin-top: 2.18rem;
+  width: 85%;
+  margin: auto;
+}
+
+.card__details h1 {
+  color: #1f2f56;
+  font-size: 1.6rem;
+}
+
+.card__details p {
+  color: #7280a7;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

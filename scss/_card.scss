@@ -5,6 +5,7 @@
   background-color: #fff;
   border-radius: $borderRadius;
   margin-bottom: 4.4375rem;
+  $contentContainerWidth: 85%;
 
   &__img {
     img {
@@ -16,10 +17,7 @@
   &__details {
     text-align: center;
     margin-top: 2.18rem;
-    // margin-bottom: 1.625rem;
-    width: 85%;
-    margin: auto;
-
+    @include cardContentContainer;
     h1 {
       color: $darkBlue;
       font-size: 1.6rem;
@@ -28,6 +26,39 @@
     p {
       color: $desBlue;
       font-size: 1rem;
+    }
+  }
+
+  &__price {
+    @include cardContentContainer;
+    margin-top: 1.625rem;
+    background-color: $veryPaleBLue;
+    display: grid;
+    grid-template-columns: auto 2fr auto;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 1.5rem;
+    border-radius: $borderRadius;
+    column-gap: 1.25rem;
+
+    .music-icon {
+      grid-row: 1/3;
+    }
+
+    span {
+      font-size: 0.9rem;
+    }
+
+    &__title {
+      font-weight: $fontWBlack;
+      color: $darkBlue;
+    }
+
+    a {
+      grid-column: 3/4;
+      grid-row: 1/3;
+      align-self: center;
+      font-size: 0.85rem;
+      color: $brightBlue;
     }
   }
 }

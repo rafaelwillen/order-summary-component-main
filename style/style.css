@@ -31,6 +31,54 @@ h2 {
   padding: 0;
 }
 
+.button,
+button {
+  padding: 1.18rem 0;
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.button.button-primary,
+button.button-primary {
+  background-color: #3829e0;
+  color: #fff;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+  -webkit-box-shadow: 0 10px 15px #dedbfa;
+          box-shadow: 0 10px 15px #dedbfa;
+}
+
+.button.button-primary:hover,
+button.button-primary:hover {
+  opacity: 0.7;
+}
+
+.button.button-transparent,
+button.button-transparent {
+  background-color: transparent;
+  color: #7280a7;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button.button-transparent:hover,
+button.button-transparent:hover {
+  color: #1f2f56;
+}
+
 .card {
   width: 90%;
   margin: auto;
@@ -47,12 +95,12 @@ h2 {
 
 .card__details {
   text-align: center;
-  margin-top: 2.18rem;
   width: 85%;
   margin: auto;
 }
 
 .card__details h1 {
+  margin-top: 2.18rem;
   color: #1f2f56;
   font-size: 1.6rem;
 }
@@ -77,6 +125,7 @@ h2 {
   border-radius: 20px;
   -webkit-column-gap: 1.25rem;
           column-gap: 1.25rem;
+  margin-bottom: 2rem;
 }
 
 .card__price .music-icon {
@@ -106,5 +155,18 @@ h2 {
       align-self: center;
   font-size: 0.85rem;
   color: #3829e0;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.card__price a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.card__actions {
+  width: 85%;
+  margin: auto;
+  padding-bottom: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */

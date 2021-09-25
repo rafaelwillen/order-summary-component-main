@@ -2,3 +2,16 @@
   width: 85%;
   margin: auto;
 }
+
+@mixin dynamicColor($backgroundColor) {
+  background-color: $backgroundColor;
+  color: textColor($backgroundColor);
+}
+
+@function textColor($backgroundColor) {
+  @if (lightness($backgroundColor) > 60) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
